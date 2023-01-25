@@ -32,11 +32,11 @@ describe(' --> API CARRINHOS.', () => {
                     .then((response) => {
                     cy.log(JSON.stringify(response.body))
                     expect(response.status).to.eq(200)
-                    //expect(response.body.quantidade).to.eq(4)
-                    //expect(response.body.carrinhos.length).to.eq(5)
-                    /*expect(response.body.produtos[0]).to.have.all.keys(
-                        'nome','preco','descricao','quantidade','_id'
-                    )*/
+                    expect(response.body.quantidade).to.eq(1)
+                    expect(response.body.carrinhos.length).to.eq(1)
+                    expect(response.body.carrinhos[0].produtos[0]).to.have.all.keys(
+                        'idProduto','quantidade','precoUnitario'
+                    )
                     
 
                 });
