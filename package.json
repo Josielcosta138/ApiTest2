@@ -1,0 +1,26 @@
+{
+  "name": "apitest2",
+  "version": "1.0.0",
+  "description": "Teste de api 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open":"cypress open",
+    "cypress:run":"cypress run --spec cypress/e2e/1-getting-started/GetProduto.cy.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Josielcosta138/ApiTest2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Josielcosta138/ApiTest2/issues"
+  },
+  "homepage": "https://github.com/Josielcosta138/ApiTest2#readme",
+  "devDependencies": {
+    "cypress": "^12.3.0"
+  }
+}
