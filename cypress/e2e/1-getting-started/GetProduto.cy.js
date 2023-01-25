@@ -13,6 +13,7 @@ describe(' --> API PRODUTOS.', () => {
                     expect(response.body.produtos[0]).to.have.all.keys(
                         'nome','preco','descricao','quantidade','_id'
                     )
+                    expect(response.body.produtos[0].nome).to.be.equal('Logitech MX Vertical')
                     
                     
 
